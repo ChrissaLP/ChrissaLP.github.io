@@ -1,0 +1,426 @@
+@charset "utf-8";
+
+/*
+   Portfolio Site
+
+   Style Sheet for the Layout of the About Page (about.html)
+
+   Author: Chrissa LaPorte
+   Date:
+
+   Filename: home.css
+
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+header, footer {
+	width: 100%;
+}
+
+a:link {
+  color: #000;
+}
+
+.navbar {
+  position: fixed;
+  display: block;
+  z-index: 100;
+  width: 100%;
+  background-color: #fff;
+  max-height: 40px;
+  padding-top: 8px;
+  top:0;
+}
+
+nav > ul {
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  background-color: #123e84;
+  border-radius: 3px;
+  box-shadow: rgba(4, 24, 56, 0.4) 5px 5px 5px;
+  min-height: 40px;
+  align-items: center;
+  padding-left: 0px;
+  margin-top: 0px;
+
+}
+
+nav > ul > li {
+    list-style: none;
+    color: white;
+    flex: 0 0 100px;
+    padding-left: 10px;
+    text-align: center;
+}
+
+
+nav > ul > li > a,
+li.dropdown:hover ul li a {
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+
+nav > ul > li > a:link,
+nav > ul > li > a:visited,
+li.dropdown:hover ul li a:link,
+li.dropdown:hover ul li a:visited {
+  color: white;
+}
+
+nav > ul > li > a:hover,
+nav > ul > li > a:focus,
+nav > ul > li > a:active,
+li.dropdown:hover ul li a:hover,
+li.dropdown:hover ul li a:focus,
+li.dropdown:hover ul li a:active  {
+  font-weight: bold;
+}
+
+/*li.name {
+  font-style: italic;
+  font-size: 1.5em;
+  flex: 1 1 50%;
+  text-align: left;
+}
+*/
+
+.name {
+  font-family: 'Special Elite', cursive;
+}
+
+#portfolio {
+  width: 85%;
+}
+.portfolioContainer {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-flow: row wrap;
+  margin: auto;
+
+}
+
+
+.portfolioExample {
+    padding: 5px;
+    text-align: center;
+}
+
+.portfolioExample img {
+  max-width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  border: 1px solid gray;
+  border-radius: 2px;
+}
+
+/*figure:hover {
+  box-shadow: 0 0 10px rgb(255, 255, 0);
+}*/
+
+.portfolioExample img:hover {
+  border: 2px solid #123e84;
+}
+
+/*figure img {
+  transition: all 1s ease, 0.5s;
+}*/
+
+figcaption {
+	color: #000;
+  padding-top: 5px;
+}
+
+footer {
+    background-color: #123e84;
+    border-radius: 3px;
+    box-shadow: rgba(4, 24, 56, 0.4) 5px 5px 5px;
+    color: white;
+    min-height: 40px;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 10px;
+}
+footer p {
+  padding-right: 10px;
+  margin: 0px;
+}
+
+
+footer a:link,
+footer a:visited  {
+  color: #fff;
+}
+
+footer a:hover,
+footer a:focus,
+footer a:active  {
+  font-weight: bold;
+}
+
+.siteContainer {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.siteContent {
+  flex: 1;
+}
+
+.siteContent h1 {
+  margin-top: 55px;
+}
+
+#about {
+  display: flex;
+  width: 100%;
+  flex-flow: row nowrap;
+  margin: 0px 20px;
+  padding: 55px 10px 10px;
+  max-width: 85%; /* this should be changed based on media queries */
+}
+
+
+
+
+.aboutImage {
+  -moz-box: 1 1 240px;
+  -ms-flexbox: 1 1 240px;
+  -webkit-flex: 1 1 240px;
+  flex: 1 1 240px;
+}
+
+.aboutImage img {
+  display: block;
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.aboutText {
+  -moz-box: 1 1 480px;
+  -ms-flexbox: 1 1 480px;
+  -webkit-flex: 1 1 480px;
+  flex: 1 1 480px;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+}
+.aboutText h2 {
+  margin-top: 0px;
+}
+
+
+#loadImage {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 50%;
+  display: block;
+  padding-top: 15px;
+}
+
+#loadImage img {
+  max-width: 100%;
+}
+
+#loadImage figcaption {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 50%;
+  font-size: smaller;
+}
+
+
+.icon {
+  vertical-align: middle;
+}
+.iconText {
+  vertical-align: middle;
+  font-weight: bold;
+}
+
+.languages {
+  margin-top: 8px;
+}
+
+.portfolioPage {
+  display: flex;
+  width: 100%;
+  flex-flow: row wrap;
+  margin: 0px 20px;
+  padding: 40px 10px;
+  max-width: 85%; /* this should be changed based on media queries */
+}
+
+
+.portfolioImage {
+  -moz-box: 1 1 240px;
+  -ms-flexbox: 1 1 240px;
+  -webkit-flex: 1 1 240px;
+  flex: 1 1 240px;
+}
+
+.portfolioImage img {
+  display: block;
+  max-width: 100%;
+  border-radius: 2px;
+  border: 1px solid gray;
+}
+
+.portfolioImage img:hover {
+  border: 2px solid #123e84;
+}
+
+
+.portfolioText {
+  -moz-box: 1 1 480px;
+  -ms-flexbox: 1 1 480px;
+  -webkit-flex: 1 1 480px;
+  flex: 1 1 480px;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+}
+.aboutText h2 {
+  margin-top: 0px;
+}
+
+#portfolio {
+  margin: 0px 20px;
+  padding: 10px 10px;
+}
+
+a#hamburger {
+  display: none;
+}
+
+
+ul.drop-nav  {
+  display: none;
+}
+
+
+
+.home a,
+.home a img {
+  max-height: 25px;
+}
+
+/* flex: 0 0 50px;
+ list-style-type: none;
+*/
+
+
+
+/* =============================
+   Mobile Styles: 0 - 480 pixels
+   =============================
+*/
+
+@media only screen and (max-width: 480px) {
+
+/*.navbar {
+  position: relative;
+}*/
+
+navbar.ul {
+  position: static;
+}
+
+a#hamburger {
+  display: block;
+  background-color: #123e84;
+  border-radius: 3px;
+}
+
+.navbar ul {
+    display: none;
+    min-width: 100%;
+  }
+
+
+a#hamburger:hover ~ ul,
+  .navbar ul:hover
+ {
+   display: flex;
+     flex-direction: column;
+     width: 50%;
+    /* position: absolute;*/
+  }
+
+a#hamburger:hover ~ ul li,
+.navbar ul:hover li {
+  flex: 1 1 50%;
+  }
+
+#about {
+  flex-flow: column wrap;
+}
+
+.portfolioPage {
+  flex-flow: column wrap;
+}
+
+footer {
+  font-size: 0.75em;
+}
+
+li.dropdown,
+li.dropdown:hover ul.drop-nav {
+  position: static;
+}
+
+li.dropdown:hover ul.drop-nav,
+ li.dropdown:hover ul.drop-nav:hover li {
+  display: block;
+  background-color: #123e84;
+}
+
+ li.dropdown:hover ul.drop-nav:hover li {
+   position: static;
+ }
+
+li.dropdown:hover ul li {
+  list-style-type: none;
+  text-align: justify;
+ }
+
+
+}
+
+@media only screen and (min-width: 481px) {
+  ul.drop-nav  {
+    flex-direction: column;
+  }
+
+  li.dropdown:hover ul {
+    display: flex;
+    min-height: 0px;
+    min-width: 200px;
+    position: absolute;
+    background-color: #123e84;
+    box-shadow: rgba(4, 24, 56, 0.4) 5px 5px 5px;
+    padding: 5px;
+    margin-left: 25px;
+  }
+
+  li.dropdown:hover ul li {
+    list-style-type: none;
+    text-align: left;
+    padding-left: 5px;
+   }
+}

@@ -1,0 +1,130 @@
+@charset "utf-8";
+
+/*
+   Books For Girls
+   Style Sheet for the Table Layout of the Books For Girls web pages 
+   (classic_books.html, girls_at_work.html)
+   
+   Author: Chrissa LaPorte
+   Date: November 20, 2018
+   
+   Filename: books_tables.css
+
+*/
+
+/* Table Styles */
+
+table {
+   border: 1px solid gray;
+   border-collapse: collapse;
+}
+
+tbody tr {
+   border: 1px solid gray; 
+}
+
+
+col#title {
+   width: 23%;
+} 
+
+
+col#description {
+   width: 40%;
+}
+
+col#author {
+   width: 25%;
+}
+
+col#links {
+   width: 12%;
+}
+
+thead {
+    background: purple;
+    color: white;
+}
+
+th {
+  text-align: center;
+}
+
+
+td {
+   font-size: 0.9em;
+}
+
+tbody th {
+    padding-top: 1em; 
+    padding-left: 0.5em; 
+}
+
+
+table img {
+   max-height: 120px;
+   display: block;
+   padding-top: 1em;
+   padding-bottom: 1em;
+   padding-left: 0.5em;
+   margin-left: auto;
+   margin-right: auto; 
+}
+
+td[data-label~="Author"] {
+      text-align: center;
+}
+  
+/*  Styles for the "Find It" Column */
+
+td ul {
+	display: block;
+        list-style-type: none;
+        margin-top: 5px;
+        margin-bottom: 1px;
+        padding-left: 2px;
+        padding-right: 4px;
+}
+
+td ul li {
+        display: block;
+        margin-right: 5px;
+}
+
+ 
+td ul li a.amazon  {
+       background-color: purple;
+       
+}
+
+td ul li a.local {
+   background-color: darkblue;
+   margin-top: 5px;
+}
+
+td ul li a {
+       display: block;
+       text-align: center;
+       text-decoration: none; 
+       padding: 0.3em;
+       border-radius: 5px;
+       box-shadow: rgb(211, 211, 211) 3px 3px 3px;
+}
+
+td ul li a:link, td ul li a:visited {
+        color: white;
+}
+
+td ul li a.local:hover, td ul li a.local:active {
+        color: white;
+        background-color: rgb(0, 0, 255);
+}
+
+
+td ul li a.amazon:hover, td ul li a.amazon:active {
+        color: white;
+        background-color: rgb(184, 46, 184);
+}
+
+
+

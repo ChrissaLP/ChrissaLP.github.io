@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+   <!--
+     Books For Girls
+     Book Reviews Page
+     
+     Author: Chrissa LaPorte
+     Date: November 20, 2018  
+
+     Filename: book_reviews.html
+   -->
+
+   <meta charset="utf-8" />
+   <meta name="keywords" content="books, children's literature" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   
+   <title>Book Reviews</title>
+   
+   <link href="books_gen.css" rel="stylesheet" />
+   <link href="books_reviews.css" rel="stylesheet" />
+   <link href="mobile1.css" rel="stylesheet" />
+   <link href="mobile2.css" rel="stylesheet" />
+   <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet" />
+
+</head>
+
+<body>
+   <header>
+      <a href="books.html"><img src="imgs/blur-books-close-up-159866_thumb.jpg" alt="" /></a>
+      <a href="index.html"><h1>Books For Girls</h1></a>
+
+      <nav class="horizontal">
+         <a id="navicon" href="#">&#9776;</a>
+         <ul>
+            <li><a href="books.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="classic_books.html">Classic Books</a></li>
+            <li><a href="girls_at_work.html">Books: Girls at Work</a></li>
+            <li><a href="book_reviews.html">- Book Reviews -</a></li>
+         </ul>
+      </nav>
+   </header>
+  
+   <h1>Book Reviews</h1>
+   
+   <article>
+       <h2><cite>Corduroy Takes a Bow:</cite> A New Look at a Classic</h2>
+       
+       <div class="review_body">
+    
+          <div class="picture"> 
+             <img src="imgs/corduroy2.jpg" alt="Corduroy book cover" />
+          </div>
+          
+          <div class="content">
+             <p>
+                The release of <cite>Corduroy Takes A Bow</cite> marks the 50th anniversary of the publication of the 
+      		classic book <cite>Corduroy</cite> by Don Freeman. What was unusual about the original book was not its eponymous 
+                main character - a teddy bear named Corduroy - but its heroine, Lisa, an African-American child 
+                who rescues Corduroy from a department store.
+             </p>
+
+             <p>  
+                The new <cite>Corduroy</cite> book brings the overly curious bear to a new setting: the theater. 
+                The book's bright illustrations convey the wonder of the theater to a young child. 
+                A child can also relate to the relationship between Lisa and her bear. The story has all 
+                the adventure and heart of the original and is worth adding to your child's bookshelf. 
+                <em>- Reviewed November 20, 2018</em>
+             </p>
+    
+             <p>
+                Rating: &#9733;  &#9733; &#9733; &#9733;
+             </p>
+          </div>
+       </div>
+    </article>
+
+    <article id="mossy_review">
+       <h2><cite>Mossy:</cite> A Tale of an Extraordinary Turtle</h2>
+          
+       <div class="review_body">
+             <div class="picture">
+                <img src="imgs/mossy.jpg" alt="Mossy book cover" />
+             </div>
+        
+             <div class="content">
+                <p>
+                   This lushly illustrated book by Jan Brett transports the reader back to an earlier time. 
+                   The detailed illustrations bring us to the world of an Edwardian natural history museum and its 
+                   surrounding garden. The book also introduces the character of Mossy, a turtle with a garden growing 
+                   on her shell, who becomes a temporary resident of the museum.
+                </p>
+                
+                <p>
+                   The story is simple in comparison to the exquisite illustrations, but it presents an effective parable for 
+                   how humans can better respect their animal neighbors. An especially great book for budding naturalists!
+                   <em>- Reviewed October 31, 2018</em>
+                </p>
+                <p>
+                   Rating: &#9733;  &#9733; &#9733; &#9734;
+                </p>
+             </div>
+       </div>
+    </article>
+
+   <h3 id="formHeader">Interested in Reviewing Books for Us?</h3>
+      
+      <form id="review" action="mailto:claporte7850@students.mc3.edu" method="post">
+         <fieldset id="form1">
+            <legend>Sign Up to Submit A Review</legend>
+            
+            <div class="formRow">
+              <label for="fname">First Name*</label>
+              <input name="first" id="fname" type="text" required />
+            </div>
+
+           <div class="formRow">
+              <label for="lname">Last Name*</label>
+              <input name="last" id="lname" type="text" required />
+           </div>
+
+           <div class="formRow">
+             <label for="email">Email Address*</label>
+             <input name="email" id="email" type="email" required />
+           </div>
+
+           <div class="formRow">
+              <label for="title">Book Title</label>
+              <input name="bookTitle" id="title" type="text" />
+           </div>
+
+           <div class="formRow">
+              <label for="bookType">Type of Book</label>
+              <select name="bookType" id="bookType">
+                 <option value="book1">Picture book</option>
+                 <option value="book2">Early reader</option>
+                 <option value="book3">Chapter book</option>
+              </select>
+           </div>
+
+          <div class="formRow">
+             <label for="book">More information about the book you would like to review:</label>
+             <textarea name="bookInfo" id="book"></textarea>
+          </div>
+
+          <input type="submit" value="Submit" />
+          <input type="reset" value="Reset Form" />
+          <p>
+             * = required field
+          </p>
+    
+       </fieldset>
+    
+    </form>
+ 
+   <footer>
+       Books For Girls &#8226; Last Updated November 20, 2018
+   </footer>
+
+</body>
+</html>

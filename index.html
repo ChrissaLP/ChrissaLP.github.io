@@ -1,1 +1,104 @@
-Hello World
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>Portfolio</title>
+
+
+<link href="css/home.css" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
+</head>
+
+<body class="siteContainer">
+
+<header>
+  <nav class="navbar">
+    <a id="hamburger" href="#"><img src="images/icons/menu.png"></a>
+    <ul>
+        <li class="home"><a href="index.html"><img src="images/icons/home.png" alt="home"></a></li>
+        <li><a href="#aboutLink">About</a></li>
+        <li class="dropdown"><a href="#portfolio">Projects &dArr;</a>
+          <ul class="drop-nav">
+            <li><a href="pages/sql.html">Real Estate Database</a></li>
+            <li><a href="pages/webpageLanding.html">Books Website</a></li>
+            <li><a href="pages/newsapp.html">News App</a></li>
+          </ul>
+        </li>
+
+        <li><a href="mailto:chrissa.laporte@gmail.com">Contact</a></li>
+
+      </ul>
+  </nav>
+</header>
+
+<main class="siteContent">
+<h1 class="name">Chrissa LaPorte</h1>
+<h2><em>Welcome to my site...</em></h2>
+<figure id="loadImage">
+  <a href="https://commons.wikimedia.org/wiki/File:Quantum_Computing;_Ion_Trapping_(5941055642).jpg" target="_blank"
+  title="National Institute of Standards and Technology [Public domain], via Wikimedia Commons">
+  <img id="qcImage" alt="Quantum Computing; Ion Trapping (5941055642)" src="images/quantum_computing.jpg">
+    </a>
+    <figcaption><a href="https://en.wikipedia.org/wiki/Trapped_ion_quantum_computer" target="_blank">Quantum computing in action!</a></figcaption>
+
+</figure>
+<p id="aboutLink"></p>
+
+<section id="about">
+
+  <div class="aboutImage">
+    <img src="images/headshot.jpg">
+  </div>
+  <div class="aboutText">
+    <h2>About Me</h2>
+    <p>For many years, I worked in the public policy space, at a French-American nonprofit. While there, I spearheaded a series of conferences on cyber security—from the intersection of cyber security and privacy concerns to the impact of new technologies on cyber security.
+      This followed a short stint in Thailand, directly after I finished a degree in international affairs.</p>
+      <p>Based on a growing interest in technology, I decided to make a career switch and started to learn to program.</p>
+      <p>One of the things I've most enjoyed learning about on my budding tech journey is quantum computing (hence the image <a href="#qcImage">above</a>).</p>
+    <p><img class="icon" src="images/icons/computer.png" alt=""><span class="iconText"> Languages/Technologies: </span>
+      <ul class="languages">
+        <li>Java, SQL, HTML, CSS, and Assembly language (MIPS)</li>
+        <li>Familiar with JavaScript and React</li>
+      </ul>
+    </p>
+
+
+
+  </div>
+</section>
+
+<section id="portfolio">
+  <h2>A few examples of my work: </h2>
+  <div class="portfolioContainer">
+    <figure class="portfolioExample"><a href="pages/sql.html"><img src="images/image1sq.png" alt=""></a>
+      <figcaption>Real Estate Database</figcaption>
+    </figure>
+    <figure class="portfolioExample"><a href="pages/webpageLanding.html"><img src="images/image2sq.png" alt=""></a>
+      <figcaption>Books for Girls website</figcaption>
+    </figure>
+    <figure class="portfolioExample"><a href="pages/newsapp.html"><img src="images/image3sq.png" alt=""></a><figcaption>Web-based News App</figcaption></figure>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+</main>
+<footer><p>Site designed by Chrissa. Icons by <a href="https://icons8.com" target="_blank">icons8</a>.</p>
+</footer>
+
+
+
+
+</body>
+</html>

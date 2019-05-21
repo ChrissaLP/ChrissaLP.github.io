@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+/*
+   Books For Girls
+   Mobile Style Sheet
+   Book Reviews
+ 
+   Author: Chrissa LaPorte
+   Date: November 20, 2018  
+
+   Mobile Style Sheet for the Layout of the Book Reviews Page (book_reviews.html)
+   
+   Filename: mobile2.css
+
+*/
+
+
+/* =============================
+	Mobile Styles: 0 - 480 pixels
+   =============================
+*/
+
+@media only screen and (max-width: 480px) {
+
+  div.review_body {
+     -webkit-flex-flow: column nowrap;
+     flex-flow: column nowrap;
+  }
+
+  div.picture, div.content {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
+
+  div.content {
+    margin-top: 5px;
+    -moz-box: 3 1 100px;
+    -ms-flexbox: 3 1 100px;
+    -webkit-flex: 3 1 100px;
+  }
+
+  form {
+    width: 70%;
+  }
+
+}
+

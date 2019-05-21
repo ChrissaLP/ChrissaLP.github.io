@@ -1,0 +1,99 @@
+@charset "utf-8";
+
+/*
+   Books for Girls
+
+   Style Sheet for the Layout of the Book Reviews Page (book_reviews.html)
+   Author: Chrissa LaPorte
+   Date: November 20, 2018  
+   
+   Filename: books_reviews.css
+
+*/
+
+/* Article Styles */
+
+article {
+   border-bottom: 1px solid lightgray;
+   text-align: justify;
+}
+
+
+/* Flexbox Styles */
+
+div.review_body {
+   display: -moz-box;
+   display: -ms-flexbox;
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-flow: row nowrap;
+   flex-flow: row nowrap;
+}
+
+div.picture img {
+  display: block;
+  max-width: 150px;
+}
+
+div.picture {
+  -moz-box: 1 1 200px;
+  -ms-flexbox: 1 1 200px;
+  -webkit-flex: 1 1 200px;
+  flex: 1 1 80px;
+
+}
+
+div.content {
+  -moz-box: 1 1 401px;
+  -ms-flexbox: 1 1 401px;
+  -webkit-flex: 1 1 401px;
+  flex: 1 1 401px;
+  margin-left: 1em;
+  margin-right: 1.5em;
+}
+
+div.content p:first-of-type {
+   margin-top: 0px;
+}
+
+/* Form Styles */
+
+h3#formHeader {
+  text-align: center;
+}
+form {
+   width: 50%;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+fieldset {
+  background: rgba(153, 179, 230, 0.3);
+  border-radius: 10px;
+}
+
+legend {
+  color: purple;
+  background: white;
+  font-weight: bold;
+  padding: 5px;
+  border: 1px dashed gray;
+}
+
+div.formRow {
+   display: -webkit-box;
+   display: -moz-box;
+   display: -ms-flexbox;
+   display: -webkit-flex;
+   display: flex; 
+   -webkit-flex-flow: row wrap;
+   flex-flow: row wrap; 
+   margin: 7px 0px; 
+}
+
+div.formRow > *  {
+   -moz-box: 1 1 300px;
+   -ms-flexbox: 1 1 300px;
+   -webkit-flex: 1 1 300px;
+   flex: 1 1 300px;
+}

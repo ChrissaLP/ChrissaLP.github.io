@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+/*
+   Books for Girls
+  
+   Style Sheet for the Layout of the About Page (about.html)
+
+   Author: Chrissa LaPorte
+   Date: November 20, 2018 
+
+   Filename: books_about.css
+
+*/
+
+/* Article Styles */
+
+article {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* Section Styles */
+
+section {
+ border-top: 1px solid lightgray;
+}
+
+section:first-of-type {
+  border-top-style: none;
+}

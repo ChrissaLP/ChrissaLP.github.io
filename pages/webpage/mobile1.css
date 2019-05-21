@@ -1,0 +1,77 @@
+@charset "utf-8";
+
+/*
+   Books For Girls
+   Mobile Style Sheet
+ 
+   Author: Chrissa LaPorte
+   Date: November 20, 2018  
+
+   General Mobile Style Sheet for the Layout of the Books For Girls Web Pages - 
+   header, navigation and footer styles
+   
+   Filename: mobile1.css
+
+*/
+
+
+/* =============================
+   Mobile Styles: 0 - 480 pixels
+   =============================
+*/
+
+@media only screen and (max-width: 480px){
+  
+  /* Mobile Header Settings */
+  
+  header img {
+    display: none;
+  }
+
+  header h1 {
+    padding-left: 0.5em;
+    padding-top: 0.5em;
+    font-size: 2.25em;
+  }
+
+  /* Mobile Navigation Styles */
+
+  nav.horizontal {
+     position: relative;
+  }
+
+  a#navicon {
+    display: block;
+    color: white;
+    background: darkblue;
+    font-size: 2em;
+    padding-bottom: 0.1em;
+  }
+
+  nav.horizontal ul {
+    display:none;
+  }
+
+  a#navicon:hover+ul, nav.horizontal ul:hover {
+    display: block;
+    position: absolute;
+    box-shadow: rgb(211, 211, 211) 5px 5px 5px;
+    width: 43%; 
+    z-index: 99;
+  }
+
+  header > nav li {
+    width: 100%;
+    clear: both;
+  }
+
+
+  /* Footer Styles */
+
+  footer {
+    text-align: center;
+    font-size: 0.8em;
+    background: darkblue;
+  }
+
+}

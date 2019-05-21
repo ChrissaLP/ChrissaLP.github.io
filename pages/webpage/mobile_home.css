@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+/*
+   Books For Girls
+   Mobile Style Sheet
+ 
+   Author: Chrissa LaPorte
+   Date: November 20, 2018  
+
+   Mobile Style Sheet for the Layout of the Books for Girls Home Page (index.html)
+   
+   Filename: mobile_home.css
+
+*/
+
+
+/* =============================
+   Mobile Styles: 0 - 480 pixels
+   =============================
+*/
+
+@media only screen and (max-width: 480px) {
+
+
+  div#reviews {
+     float: none;
+     clear: both;
+     margin-left: auto;
+     margin-right: auto;
+     width: 95%;
+  }
+
+  section#favorites img#girl {
+     display: none;
+  }
+
+  section#favorites, section#signup {
+     clear: both;
+     float: none;
+     margin-left: auto;
+     margin-right: auto;
+     width: 70%;
+  }
+
+}

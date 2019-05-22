@@ -307,6 +307,57 @@ footer a:active  {
   font-weight: bold;
 }
 
+/* Modal */
+
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 5px 0;
+  height: 150px;
+}
+
+/* close button */
+.close {
+  position: absolute;
+  top: 25px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #72b1b6;
+  text-decoration: none;
+  cursor: pointer;
+}
 
 
 /* =============================
@@ -399,7 +450,7 @@ footer a:active  {
     font-size: 0.75em;
   }
 
-  #webpageImage {
+  .webpageImage {
     margin-bottom: 10px;
   }
 }
@@ -429,4 +480,8 @@ footer a:active  {
    .portfolioText {
      font-size: 1em;
    }
+
+   .modal-content {
+    width: 100%;
+  }
 }

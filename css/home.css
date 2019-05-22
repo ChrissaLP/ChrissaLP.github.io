@@ -3,12 +3,12 @@
 /*
    Portfolio Site
 
-   Style Sheet for the Layout of the About Page (about.html)
+   Style Sheet for my Portfolio Site
 
    Author: Chrissa LaPorte
-   Date:
+   Date: May 2019
 
-   Filename: home2.css -- problematic one
+   Filename: home.css
 
 */
 
@@ -386,7 +386,6 @@ footer a:active  {
       min-width: 100%;
     }
 
-
   a#hamburger:hover ~ ul,
     .navbar ul:hover
    {
@@ -439,19 +438,21 @@ footer a:active  {
     text-align: justify;
    }
 
-
   #about,
   #portfolio {
     font-size: 0.75em;
   }
 
   .portfolioText {
-
     font-size: 0.75em;
   }
 
   .webpageImage {
     margin-bottom: 10px;
+  }
+
+  .modal-content {
+    width: 95%;
   }
 }
 
@@ -481,7 +482,4 @@ footer a:active  {
      font-size: 1em;
    }
 
-   .modal-content {
-    width: 100%;
-  }
 }

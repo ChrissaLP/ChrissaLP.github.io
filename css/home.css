@@ -112,6 +112,7 @@ li.dropdown:hover ul li a:active  {
   font-weight: bold;
 }
 
+
 a#hamburger {
   display: none;
 }
@@ -398,6 +399,10 @@ footer a:active  {
   a#hamburger:hover ~ ul li,
   .navbar ul:hover li {
     flex: 1 1 100%;
+    }
+
+  li.dropdown:hover ul li a {
+      font-size: .75em;
     }
 
   #about {

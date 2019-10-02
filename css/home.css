@@ -18,6 +18,12 @@
   box-sizing: border-box;
 }
 
+body {
+  margin-left: auto;
+  margin-right: auto;
+  width: 97%;
+}
+
 header, footer {
 	width: 100%;
 }
@@ -56,7 +62,7 @@ a:link {
   position: fixed;
   display: block;
   z-index: 100;
-  width: 100%;
+  width: 97%;
   background-color: #fff;
   max-height: 40px;
   padding-top: 8px;
